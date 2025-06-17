@@ -18,7 +18,7 @@
     { nixpkgs, home-manager, nixvim, ... }:
     let
       system = "x86_64-linux";
-      pkgs = import nixpkgs { system = "x86_64-linux"; config.allowUnfree = true; };
+      pkgs = import nixpkgs { inherit system; };
     in
     {
       homeConfigurations."allens3" = home-manager.lib.homeManagerConfiguration {
