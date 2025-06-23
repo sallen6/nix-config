@@ -1,9 +1,13 @@
 { config, pkgs, ... }:
 
+let
+  myConfig = import "${toString ./.}/config.nix";
+in
 {
   imports = [
     ./programs/nixvim.nix
     ./programs/tmux.nix
+    ./programs/git.nix
   ];
   home.username = "allens3";
   home.homeDirectory = "/home/allens3";
@@ -12,7 +16,6 @@
 
   home.packages = [
     pkgs.fzf
-    pkgs.git
     pkgs.ripgrep
   ];
 
@@ -26,4 +29,5 @@
   nixpkgs.config.allowUnfree = true;
 
   programs.home-manager.enable = true;
+  _module.args.me = myConfig.me;
 }
