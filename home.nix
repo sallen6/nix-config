@@ -3,6 +3,7 @@
 {
   imports = [
     ./programs/nixvim.nix
+    ./programs/tmux.nix
   ];
   home.username = "allens3";
   home.homeDirectory = "/home/allens3";
