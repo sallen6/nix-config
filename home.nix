@@ -8,6 +8,7 @@ in
     ./programs/nixvim.nix
     ./programs/tmux.nix
     ./programs/git.nix
+    ./programs/zsh.nix
   ];
   home.username = "allens3";
   home.homeDirectory = "/home/allens3";
@@ -31,3 +32,4 @@ in
   programs.home-manager.enable = true;
   _module.args.me = myConfig.me;
 }
+
