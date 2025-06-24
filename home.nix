@@ -25,6 +25,7 @@ in
 
   home.sessionVariables = {
     EDITOR = "vim";
+    PAGER = "less -F -X";
   };
 
   nixpkgs.config.allowUnfree = true;

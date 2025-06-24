@@ -8,7 +8,7 @@
     oh-my-zsh = {
       enable = true;
       plugins = [ ];
-      theme = "amuse";
+      theme = "simple";
     };
   };
 }
