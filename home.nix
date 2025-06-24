@@ -5,7 +5,7 @@ let
 in
 {
   imports = [
-    ./programs/nixvim.nix
+    ./programs/neovim.nix
     ./programs/tmux.nix
     ./programs/git.nix
     ./programs/zsh.nix
