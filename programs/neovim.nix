@@ -83,4 +83,12 @@
       autoindent = true; # Do clever autoindenting
     };
   };
+
+  # Neovim specific shell aliases
+  programs.zsh = {
+    shellAliases = {
+      nv = "nvim";
+      nvfzf = "nvim $(fzf)";
+    };
+  };
 }
