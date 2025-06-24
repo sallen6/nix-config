@@ -8,7 +8,7 @@
     oh-my-zsh = {
       enable = true;
       plugins = [ ];
-      theme = "simple";
+      theme = "avit";
     };
   };
 }

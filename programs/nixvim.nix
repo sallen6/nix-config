@@ -17,7 +17,6 @@
     plugins = {
       autoclose.enable = true; 
       lualine.enable = true;
-      visual-whitespace.enable = true;
 
       lsp-format = {
         enable = true;
