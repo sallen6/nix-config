@@ -3,7 +3,7 @@
 {
   programs.nixvim = {
     enable = true;
-    
+
     clipboard = {
       # Use system clipboard
       register = "unnamedplus";
@@ -15,7 +15,7 @@
     editorconfig.enable = true;
 
     plugins = {
-      autoclose.enable = true; 
+      autoclose.enable = true;
       lualine.enable = true;
 
       lsp-format = {
@@ -32,7 +32,7 @@
       };
       treesitter = {
         enable = true;
-       	autoLoad = true; 
+        autoLoad = true;
       };
 
       lsp = {
@@ -40,7 +40,7 @@
         inlayHints = true;
         servers = {
           bashls.enable = true;
-	        terraformls.enable = true;
+          terraformls.enable = true;
           ts_ls = {
             enable = true;
           };

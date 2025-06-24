@@ -15,7 +15,12 @@
   };
 
   outputs =
-    { nixpkgs, home-manager, nixvim, ... }:
+    {
+      nixpkgs,
+      home-manager,
+      nixvim,
+      ...
+    }:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
@@ -24,8 +29,8 @@
       homeConfigurations."allens3" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
-        modules = [ 
-          ./home.nix 
+        modules = [
+          ./home.nix
           nixvim.homeManagerModules.nixvim
         ];
 

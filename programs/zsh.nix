@@ -2,7 +2,7 @@
 
 {
   programs.zsh = {
-    enable = true; 
+    enable = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     oh-my-zsh = {

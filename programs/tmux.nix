@@ -6,7 +6,7 @@
     aggressiveResize = true;
     baseIndex = 1;
     escapeTime = 0;
-    prefix = "C-a";    
+    prefix = "C-a";
     extraConfig = ''
       # split panes using | and -
       bind | split-window -h
@@ -19,11 +19,10 @@
       bind -n M-Right select-pane -R
       bind -n M-Up select-pane -U
       bind -n M-Down select-pane -D
-      
+
       set -g default-terminal "screen-256color"
       set -g status-bg black
       set -g status-fg white
     '';
   };
 }
-

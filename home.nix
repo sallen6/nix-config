@@ -33,4 +33,3 @@ in
   programs.home-manager.enable = true;
   _module.args.me = myConfig.me;
 }
-
