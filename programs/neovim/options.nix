@@ -2,52 +2,6 @@
 
 {
   programs.nixvim = {
-    enable = true;
-
-    clipboard = {
-      # Use system clipboard
-      register = "unnamedplus";
-      providers.wl-copy.enable = true;
-    };
-
-    colorschemes.onedark.enable = true;
-    diagnostic.settings.virtual_text = true;
-    editorconfig.enable = true;
-
-    plugins = {
-      autoclose.enable = true;
-      lualine.enable = true;
-
-      lsp-format = {
-        enable = true;
-        lspServersToEnable = "all";
-      };
-
-      gitsigns = {
-        enable = true;
-        settings.signs = {
-          add.text = "+";
-          change.text = "~";
-        };
-      };
-      treesitter = {
-        enable = true;
-        autoLoad = true;
-      };
-
-      lsp = {
-        enable = true;
-        inlayHints = true;
-        servers = {
-          bashls.enable = true;
-          terraformls.enable = true;
-          ts_ls = {
-            enable = true;
-          };
-        };
-      };
-    };
-
     opts = {
       updatetime = 100; # Faster completion
       # Line numbers
@@ -81,14 +35,6 @@
       shiftwidth = 2; # Number of spaces used for each step of (auto)indent (local to buffer)
       expandtab = true; # Expand <Tab> to spaces in Insert mode (local to buffer)
       autoindent = true; # Do clever autoindenting
-    };
-  };
-
-  # Neovim specific shell aliases
-  programs.zsh = {
-    shellAliases = {
-      nv = "nvim";
-      nvfzf = "nvim $(fzf)";
     };
   };
 }

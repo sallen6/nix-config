@@ -5,10 +5,10 @@ let
 in
 {
   imports = [
-    ./programs/neovim.nix
-    ./programs/tmux.nix
-    ./programs/git.nix
-    ./programs/zsh.nix
+    ./programs/neovim/default.nix
+    ./programs/tmux/default.nix
+    ./programs/git/default.nix
+    ./programs/zsh/default.nix
   ];
   home.username = "allens3";
   home.homeDirectory = "/home/allens3";
