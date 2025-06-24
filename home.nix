@@ -16,8 +16,12 @@ in
   home.stateVersion = "25.05";
 
   home.packages = [
+    # Misc utils
     pkgs.fzf
     pkgs.ripgrep
+
+    # Nix development
+    pkgs.nixfmt-rfc-style
   ];
 
   home.file = {
