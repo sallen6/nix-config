@@ -1,13 +1,18 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 let
   myConfig = import "${toString ./.}/config.nix";
 in
 {
   imports = [
+    ./programs/git/default.nix
     ./programs/neovim/default.nix
     ./programs/tmux/default.nix
-    ./programs/git/default.nix
     ./programs/zsh/default.nix
   ];
   home.username = "allens3";
@@ -28,7 +33,7 @@ in
   };
 
   home.sessionVariables = {
-    EDITOR = "vim";
+    EDITOR = lib.mkDefault "vim";
     PAGER = "less -F -X";
   };
 
