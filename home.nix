@@ -28,6 +28,7 @@ in
     pkgs.ripgrep
 
     # CDP dependencies
+    pkgs.maven
     pkgs.nodejs_22
     pkgs.yq
 
