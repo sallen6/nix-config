@@ -24,7 +24,12 @@ in
     # Misc utils
     pkgs.bat
     pkgs.fzf
+    pkgs.jq
     pkgs.ripgrep
+
+    # CDP dependencies
+    pkgs.nodejs_22
+    pkgs.yq
 
     # Nix development
     pkgs.nixfmt-rfc-style
