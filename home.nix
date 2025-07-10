@@ -30,6 +30,7 @@ in
     # CDP dependencies
     pkgs.maven
     pkgs.nodejs_22
+    pkgs.terraform
     pkgs.yq
 
     # Nix development
