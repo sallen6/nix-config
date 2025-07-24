@@ -8,6 +8,9 @@
       lualine.enable = true;
       web-devicons.enable = true;
 
+      # Unfree
+      copilot-vim.enable = true;
+
       lsp-format = {
         enable = true;
         lspServersToEnable = "all";
