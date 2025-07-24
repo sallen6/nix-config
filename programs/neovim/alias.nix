@@ -6,7 +6,7 @@
     shellAliases = {
       # GNU Utils
       cat = "bat -p"; 
-      ls = "eza";
+      ls = "eza -la --group-directories-first";
       rm = "rm -I";
 
       # Editor
