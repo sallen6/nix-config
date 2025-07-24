@@ -23,6 +23,7 @@ in
   home.packages = [
     # Misc utils
     pkgs.bat
+    pkgs.eza
     pkgs.fzf
     pkgs.jq
     pkgs.ripgrep
