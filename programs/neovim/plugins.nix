@@ -4,6 +4,7 @@
   programs.nixvim = {
     plugins = {
       autoclose.enable = true;
+      comment.enable = true;
       gitblame.enable = true;
       lualine.enable = true;
       web-devicons.enable = true;
