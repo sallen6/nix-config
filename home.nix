@@ -29,6 +29,7 @@ in
     pkgs.ripgrep
 
     # CDP dependencies
+    pkgs.pnpm
     pkgs.maven
     pkgs.nodejs_22
     pkgs.terraform
