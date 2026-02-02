@@ -10,5 +10,9 @@
       plugins = [ ];
       theme = "avit";
     };
+    # Add ~/
+    initExtra = ''
+      export PATH="/home/allens3/.local/bin:$PATH"
+    '';
   };
 }
