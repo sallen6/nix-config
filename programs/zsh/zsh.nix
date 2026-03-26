@@ -11,7 +11,7 @@
       theme = "avit";
     };
     # Add ~/
-    initExtra = ''
+    initContent = ''
       export PATH="/home/allens3/.local/bin:$PATH"
     '';
   };

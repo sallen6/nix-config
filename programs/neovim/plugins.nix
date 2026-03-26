@@ -29,8 +29,8 @@
         enable = true;
         keymaps = {
         # Find files using Telescope command-line sugar.
-        "<leader>ff" = "find_files find_command=rg,--ignore,--hidden,--files,-g,!.git";
-        "<leader>fg" = "live_grep find_command=rg,--ignore,--hidden,--files,-g,!.git";
+        "<leader>ff" = "git_files";
+        "<leader>fg" = "live_grep hidden=true";
         "<leader>b" = "buffers";
         "<leader>fh" = "help_tags";
         "<leader>fd" = "diagnostics";
