@@ -23,6 +23,8 @@
       set -g default-terminal "screen-256color"
       set -g status-bg black
       set -g status-fg white
+
+      set -g mouse on
     '';
   };
 }
