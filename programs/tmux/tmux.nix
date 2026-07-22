@@ -8,9 +8,9 @@
     escapeTime = 0;
     prefix = "C-a";
     extraConfig = ''
-      # split panes using | and -
-      bind | split-window -h
-      bind - split-window -v
+      # split panes using | and -, opening in the current pane's directory
+      bind | split-window -h -c "#{pane_current_path}"
+      bind - split-window -v -c "#{pane_current_path}"
       unbind '"'
       unbind '%'
 
