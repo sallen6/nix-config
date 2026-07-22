@@ -5,7 +5,9 @@
   programs.zsh = {
     shellAliases = {
       nv = "nvim";
+      nvf = "nvim $(fzf)";
       nvfzf = "nvim $(fzf)";
+      vim = "nvim";
     };
   };
 }
