@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 
 {
   programs.tmux = {
@@ -20,7 +20,8 @@
       bind -n M-Up select-pane -U
       bind -n M-Down select-pane -D
 
-      set -g default-terminal "screen-256color"
+      set -g default-terminal "tmux-256color"
+      set -ag terminal-overrides ",*256col*:RGB"
       set -g status-bg black
       set -g status-fg white
 
