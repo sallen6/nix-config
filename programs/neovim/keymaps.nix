@@ -1,6 +1,4 @@
 {
-  config,
-  pkgs,
   lib,
   ...
 }:
@@ -25,6 +23,11 @@
               "<C-j>" = "<C-w>j";
               "<C-k>" = "<C-w>k";
               "<C-l>" = "<C-w>l";
+
+              # Oil
+              "-" = ":Oil<CR>";
+              "<leader>v" = "<CMD>vsplit | :Oil<CR>";
+              "<leader>s" = "<CMD>split | :Oil<CR>";
             };
         visual =
           lib.mapAttrsToList
