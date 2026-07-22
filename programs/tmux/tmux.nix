@@ -25,8 +25,6 @@
       set -g status-bg black
       set -g status-fg white
 
-      set -g mouse on
-
       # claude
       set -g focus-events on
     '';
