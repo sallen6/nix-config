@@ -7,6 +7,8 @@
       comment.enable = true;
       gitblame.enable = true;
       lualine.enable = true;
+      oil.enable = true;
+      oil-git-status.enable = true;
       web-devicons.enable = true;
 
       # Unfree
