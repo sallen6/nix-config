@@ -31,7 +31,7 @@ in
     # CDP dependencies
     pkgs.pnpm
     pkgs.maven
-    pkgs.nodejs_22
+    # pkgs.nodejs_22 Removed because I can't get executables to work with nid
     pkgs.terraform
     pkgs.yq
 
