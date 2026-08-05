@@ -24,6 +24,10 @@
               "<C-k>" = "<C-w>k";
               "<C-l>" = "<C-w>l";
 
+              # Gitsigns
+              "<leader>gj" = "<CMD>:Gitsigns nav_hunk next<CR>";
+              "<leader>gk" = ":Gitsigns nav_hunk prev<CR>";
+
               # Oil
               "-" = ":Oil<CR>";
               "<leader>v" = "<CMD>vsplit | :Oil<CR>";
