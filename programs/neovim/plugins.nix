@@ -5,6 +5,7 @@
     plugins = {
       autoclose.enable = true;
       comment.enable = true;
+      diffview.enable = true;
       gitblame.enable = true;
       lualine.enable = true;
       oil = {

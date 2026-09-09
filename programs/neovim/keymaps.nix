@@ -24,6 +24,10 @@
               "<C-k>" = "<C-w>k";
               "<C-l>" = "<C-w>l";
 
+              # Diffview
+              "<leader>d" = "<CMD>:DiffviewOpen<CR>";
+              "<leader>dq" = "<CMD>:DiffviewClose<CR>";
+
               # Gitsigns
               "<leader>gj" = "<CMD>:Gitsigns nav_hunk next<CR>";
               "<leader>gk" = ":Gitsigns nav_hunk prev<CR>";
