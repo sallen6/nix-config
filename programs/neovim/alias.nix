@@ -8,6 +8,9 @@
       nvf = "nvim $(fzf)";
       nvfzf = "nvim $(fzf)";
       vim = "nvim";
+
+      # Default model workaround
+      claude = "claude --model opus";
     };
   };
 }
