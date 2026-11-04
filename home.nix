@@ -10,6 +10,7 @@ let
 in
 {
   imports = [
+    ./programs/direnv/default.nix
     ./programs/git/default.nix
     ./programs/neovim/default.nix
     ./programs/tmux/default.nix
@@ -27,13 +28,6 @@ in
     pkgs.fzf
     pkgs.jq
     pkgs.ripgrep
-
-    # CDP dependencies
-    pkgs.pnpm
-    pkgs.maven
-    # pkgs.nodejs_22 Removed because I can't get executables to work with nid
-    pkgs.terraform
-    pkgs.yq
 
     # Nix development
     pkgs.nixfmt-rfc-style

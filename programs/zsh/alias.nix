@@ -9,9 +9,6 @@
       mkdir = "mkdir -pv";
       rm = "rm -I";
 
-      # CDP project specific
-      yarn = "pnpm";
-
       # Misc
       weather = "curl wttr.in/Philadelphia";
     };
