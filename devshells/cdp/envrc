@@ -1,0 +1,4 @@
+# Symlinked to ~/cdp/clinical-data-processing/.envrc
+use flake ~/repos/nix-config#cdp
+watch_file ~/repos/nix-config/devshells/cdp/default.nix
+PATH_add node_modules/.bin

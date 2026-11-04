@@ -37,5 +37,7 @@
         ];
 
       };
+
+      devShells.${system}.cdp = import ./devshells/cdp { inherit pkgs; };
     };
 }
