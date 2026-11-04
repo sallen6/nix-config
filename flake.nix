@@ -33,7 +33,7 @@
 
         modules = [
           ./home.nix
-          nixvim.homeManagerModules.nixvim
+          nixvim.homeModules.nixvim
         ];
 
       };

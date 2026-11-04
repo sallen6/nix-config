@@ -10,10 +10,10 @@
   programs.git = {
     enable = true;
 
-    userName = me.gitUser;
-    userEmail = me.email;
+    settings.user.name = me.gitUser;
+    settings.user.email = me.email;
 
-    aliases = {
+    settings.alias = {
       co = "checkout";
       cob = "checkout -b";
       coo = "!git fetch && git checkout";
