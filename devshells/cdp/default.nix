@@ -10,8 +10,5 @@ pkgs.mkShell {
     ssm-session-manager-plugin
     jfrog-cli
     k6
-    # Wrapped so yq's Python doesn't shadow the system python3, whose user site-packages
-    # provide the docker-compose library used by scripts/util/generate-compose-config.py.
-    (writeShellScriptBin "yq" ''exec ${yq}/bin/yq "$@"'')
   ];
 }
