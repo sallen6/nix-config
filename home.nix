@@ -39,6 +39,10 @@ in
     pkgs.yq
     pkgs.zip
 
+    # Cloud and forge CLIs
+    pkgs.awscli2
+    pkgs.gh
+
     # Nix development
     pkgs.nixfmt-rfc-style
   ];
